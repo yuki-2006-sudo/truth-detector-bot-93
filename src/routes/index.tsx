@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   const { history } = useAppState();
-  const latest = history[0];
+  const latest = history[0]!;
 
   return (
     <PageShell>

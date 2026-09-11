@@ -22,7 +22,7 @@ export const Route = createFileRoute("/result")({
 
 function ResultPage() {
   const { history } = useAppState();
-  const latest = history[0];
+  const latest = history[0]!;
   const good = latest.verdict === "REAL";
 
   return (

@@ -27,7 +27,7 @@ type Result = { verdict: Verdict; confidence: number; tokens: number; latency: s
 
 function CheckPage() {
   const { user } = useAppState();
-  const [text, setText] = useState(SAMPLE_NEWS[0].text);
+  const [text, setText] = useState(SAMPLE_NEWS[0]!.text);
   const [result, setResult] = useState<Result | null>(null);
   const [busy, setBusy] = useState(false);
 
